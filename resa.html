@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>La fabrique du petit mangé</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <!--Nom du restaurant-->
+        <nav>
+            <h1 class="titre">La fabrique du petit mangé</h1>
+                <ul class="nav">
+                        <li><a href="./resto.html">Le Resto</a></li>
+                            <li class="menu-vertical"><a href="#">La Carte</a>
+                                <ul class="sous">
+                                    <li><a href="./recette1.html">Lundi</a></li>
+                                    <li><a href="./recette2.html">Mardi</a></li>
+                                    <li><a href="./recette3.html">Mercredi</a></li>
+                                    <li><a href="./recette4.html">Jeudi</a></li>
+                                    <li><a href="./recette5.html">Vendredi</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Fournisseur</a></li>
+                            <li><a href="./resa.html">Réservation</a></li>
+                            <li><a href="./contact.html">Nous contacter</a></li>
+                            <li><a href="./livre.html">Livre d'Or</a></li>
+                </ul>
+        </nav>
+
+        <form class="resa" method="POST" action="resa.php">
+
+            <h2>Réservation</h2>
+
+            <fieldset>
+
+                <legend>A deux ou plus nombreux, pensez à réserver!</legend>
+
+                <p>
+                    <label for="dateresa">Date souhaitée</label>:<input type="date" name="datemess" id="datemess" required/>
+                </p>
+                <p>
+                    <label for="nom">A quel nom?</label><input type="text" name="nom" id="nom" required/>
+                </p>
+                <p>
+                    <label for="nombre">Pour combien?</label><input type="number" name="nombre" id="nombre" required/>
+                </p>
+                <p>
+                    <label for="divers">Une précision à nous transmettre?</label></br>
+                    <textarea name="message" id="message" rows="5" cols="25"></textarea>
+                </p>
+
+
+            </fieldset>
+
+            <input type="submit" value="Envoyer" />
+            <input type="reset" value="Effacer" />
+
+        </form>
+
+   
+        <footer>
+            <p><a href="./resto.html">Concept</a> &emsp; Le Chef &emsp; <a href="./contact.html">Nous contacter</a> <br><br><br><br>© 2020 La Fabrique du petit mangé </br></br></br></br> </p>
+                <div class="logos">
+                    <img src="https://www.cmonsite.fr/creer-un-site/wp-content/uploads/2013/03/facebook-icone-CmonSite.png" alt="logo_facebook" height="50" width="50" />
+                    <img src="https://www.cmonsite.fr/creer-un-site/wp-content/uploads/2019/01/logo-instagram.png" alt="logo_instagram" height="50" width="50" />
+                </div>
+    
+        </footer>
+    
+        </body>
+    
+    </html>
